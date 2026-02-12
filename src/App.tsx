@@ -1,5 +1,6 @@
 import { ComponentA } from './components/ComponentA'
 import { ComponentB } from './components/ComponentB'
+import { Solution1 } from './components/Solution1'
 
 export default function App() {
   return (
@@ -51,6 +52,27 @@ export default function App() {
           <div className="grid grid-cols-2 gap-6 mb-4">
             <ComponentA />
             <ComponentB />
+          </div>
+        </section>
+
+        {/* ===== PARTIE 2 : LES SOLUTIONS ===== */}
+        <section>
+          <div className="mb-6 flex items-center gap-3">
+            <span className="bg-green-100 text-green-700 text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wide">
+              ✅ Partie 2 — Les solutions
+            </span>
+            <div className="flex-1 border-t border-green-200" />
+          </div>
+
+          <div className="mb-8">
+            <h2 className="text-base font-bold text-gray-700 mb-3">
+              Solution 1 —{' '}
+              <code className="bg-gray-100 px-1 rounded">mutationKey</code>
+              {' '}+{' '}
+              <code className="bg-gray-100 px-1 rounded">useIsMutating</code>
+              <span className="text-green-600 text-xs font-normal ml-2">⭐ recommandée</span>
+            </h2>
+            <Solution1 />
           </div>
         </section>
 

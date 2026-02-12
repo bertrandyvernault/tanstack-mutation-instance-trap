@@ -2,6 +2,7 @@ import { ComponentA } from './components/ComponentA'
 import { ComponentB } from './components/ComponentB'
 import { Solution1 } from './components/Solution1'
 import { Solution2 } from './components/Solution2'
+import { Solution3 } from './components/Solution3'
 
 export default function App() {
   return (
@@ -81,6 +82,13 @@ export default function App() {
               Solution 2 — Instance partagée (parent commun)
             </h2>
             <Solution2 />
+          </div>
+
+          <div className="mb-8">
+            <h2 className="text-base font-bold text-gray-700 mb-3">
+              Solution 3 — Context global
+            </h2>
+            <Solution3 />
           </div>
         </section>
 
